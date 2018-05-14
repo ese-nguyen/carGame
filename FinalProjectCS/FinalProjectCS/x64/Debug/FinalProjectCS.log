@@ -1,0 +1,68 @@
+﻿Build started 23/06/2017 11:00:40.
+     1>Project "E:\.com.NSH\FinalProjectCS\FinalProjectCS\FinalProjectCS.vcxproj" on node 2 (Build target(s)).
+     1>PrepareForBuild:
+         Creating directory "E:\.com.NSH\FinalProjectCS\x64\Debug\".
+         Creating directory "x64\Debug\FinalProjectCS.tlog\".
+       InitializeBuildStatus:
+         Creating "x64\Debug\FinalProjectCS.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"E:\SFML-2.4.2\include" /ZI /nologo /W3 /WX- /sdl /Od /D SFML_STATIC /D _MBCS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp Menu.cpp
+         Menu.cpp
+         main.cpp
+     1>e:\.com.nsh\finalprojectcs\finalprojectcs\main.cpp(18): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"E:\.com.NSH\FinalProjectCS\x64\Debug\FinalProjectCS.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\SFML-2.4.2\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"E:\.com.NSH\FinalProjectCS\x64\Debug\FinalProjectCS.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\.com.NSH\FinalProjectCS\x64\Debug\FinalProjectCS.lib" /MACHINE:X64 x64\Debug\main.obj
+         x64\Debug\Menu.obj
+     1>main.obj : error LNK2019: unresolved external symbol "public: __cdecl sf::String::String(char const *,class std::locale const &)" (??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z) referenced in function main
+     1>Menu.obj : error LNK2001: unresolved external symbol "public: __cdecl sf::String::String(char const *,class std::locale const &)" (??0String@sf@@QEAA@PEBDAEBVlocale@std@@@Z)
+     1>main.obj : error LNK2019: unresolved external symbol "public: static bool __cdecl sf::Keyboard::isKeyPressed(enum sf::Keyboard::Key)" (?isKeyPressed@Keyboard@sf@@SA_NW4Key@12@@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: static bool __cdecl sf::Mouse::isButtonPressed(enum sf::Mouse::Button)" (?isButtonPressed@Mouse@sf@@SA_NW4Button@12@@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: static class sf::Vector2<int> __cdecl sf::Mouse::getPosition(class sf::Window const &)" (?getPosition@Mouse@sf@@SA?AV?$Vector2@H@2@AEBVWindow@2@@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __cdecl sf::VideoMode::VideoMode(unsigned int,unsigned int,unsigned int)" (??0VideoMode@sf@@QEAA@III@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Window::close(void)" (?close@Window@sf@@QEAAXXZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl sf::Window::isOpen(void)const " (?isOpen@Window@sf@@QEBA_NXZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl sf::Window::pollEvent(class sf::Event &)" (?pollEvent@Window@sf@@QEAA_NAEAVEvent@2@@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Window::setVerticalSyncEnabled(bool)" (?setVerticalSyncEnabled@Window@sf@@QEAAX_N@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Window::setFramerateLimit(unsigned int)" (?setFramerateLimit@Window@sf@@QEAAXI@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Window::display(void)" (?display@Window@sf@@QEAAXXZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: virtual __cdecl sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UEAA@XZ) referenced in function "public: virtual __cdecl sf::Sprite::~Sprite(void)" (??1Sprite@sf@@UEAA@XZ)
+     1>Menu.obj : error LNK2001: unresolved external symbol "public: virtual __cdecl sf::Transformable::~Transformable(void)" (??1Transformable@sf@@UEAA@XZ)
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Transformable::setPosition(float,float)" (?setPosition@Transformable@sf@@QEAAXMM@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Transformable::setScale(class sf::Vector2<float> const &)" (?setScale@Transformable@sf@@QEAAXAEBV?$Vector2@M@2@@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Transformable::setOrigin(float,float)" (?setOrigin@Transformable@sf@@QEAAXMM@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Transformable::move(float,float)" (?move@Transformable@sf@@QEAAXMM@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __cdecl sf::Texture::Texture(void)" (??0Texture@sf@@QEAA@XZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __cdecl sf::Texture::~Texture(void)" (??1Texture@sf@@QEAA@XZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl sf::Texture::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class sf::Rect<int> const &)" (?loadFromFile@Texture@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV?$Rect@H@2@@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Texture::setSmooth(bool)" (?setSmooth@Texture@sf@@QEAAX_N@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __cdecl sf::RenderWindow::RenderWindow(class sf::VideoMode,class sf::String const &,unsigned int,struct sf::ContextSettings const &)" (??0RenderWindow@sf@@QEAA@VVideoMode@1@AEBVString@1@IAEBUContextSettings@1@@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: virtual __cdecl sf::RenderWindow::~RenderWindow(void)" (??1RenderWindow@sf@@UEAA@XZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: virtual class sf::Vector2<unsigned int> __cdecl sf::RenderWindow::getSize(void)const " (?getSize@RenderWindow@sf@@UEBA?AV?$Vector2@I@2@XZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __cdecl sf::Sprite::Sprite(void)" (??0Sprite@sf@@QEAA@XZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Sprite::setTexture(class sf::Texture const &,bool)" (?setTexture@Sprite@sf@@QEAAXAEBVTexture@2@_N@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Sprite::setColor(class sf::Color const &)" (?setColor@Sprite@sf@@QEAAXAEBVColor@2@@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::SoundStream::play(void)" (?play@SoundStream@sf@@QEAAXXZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::SoundStream::setLoop(bool)" (?setLoop@SoundStream@sf@@QEAAX_N@Z) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: __cdecl sf::Music::Music(void)" (??0Music@sf@@QEAA@XZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: virtual __cdecl sf::Music::~Music(void)" (??1Music@sf@@UEAA@XZ) referenced in function main
+     1>main.obj : error LNK2019: unresolved external symbol "public: bool __cdecl sf::Music::openFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?openFromFile@Music@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function main
+     1>main.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Red" (?Red@Color@sf@@2V12@B)
+     1>Menu.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::Red" (?Red@Color@sf@@2V12@B)
+     1>Menu.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Transformable::setPosition(class sf::Vector2<float> const &)" (?setPosition@Transformable@sf@@QEAAXAEBV?$Vector2@M@2@@Z) referenced in function "public: __cdecl Menu::Menu(float,float)" (??0Menu@@QEAA@MM@Z)
+     1>Menu.obj : error LNK2019: unresolved external symbol "public: __cdecl sf::Font::Font(void)" (??0Font@sf@@QEAA@XZ) referenced in function "public: __cdecl Menu::Menu(float,float)" (??0Menu@@QEAA@MM@Z)
+     1>Menu.obj : error LNK2019: unresolved external symbol "public: __cdecl sf::Font::~Font(void)" (??1Font@sf@@QEAA@XZ) referenced in function "int `public: __cdecl Menu::Menu(float,float)'::`1'::dtor$0" (?dtor$0@?0???0Menu@@QEAA@MM@Z@4HA)
+     1>Menu.obj : error LNK2019: unresolved external symbol "public: bool __cdecl sf::Font::loadFromFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?loadFromFile@Font@sf@@QEAA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function "public: __cdecl Menu::Menu(float,float)" (??0Menu@@QEAA@MM@Z)
+     1>Menu.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::RenderTarget::draw(class sf::Drawable const &,class sf::RenderStates const &)" (?draw@RenderTarget@sf@@QEAAXAEBVDrawable@2@AEBVRenderStates@2@@Z) referenced in function "public: void __cdecl Menu::draw(class sf::RenderWindow &)" (?draw@Menu@@QEAAXAEAVRenderWindow@sf@@@Z)
+     1>Menu.obj : error LNK2019: unresolved external symbol "public: __cdecl sf::Text::Text(void)" (??0Text@sf@@QEAA@XZ) referenced in function "public: __cdecl Menu::Menu(float,float)" (??0Menu@@QEAA@MM@Z)
+     1>Menu.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Text::setString(class sf::String const &)" (?setString@Text@sf@@QEAAXAEBVString@2@@Z) referenced in function "public: __cdecl Menu::Menu(float,float)" (??0Menu@@QEAA@MM@Z)
+     1>Menu.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Text::setFont(class sf::Font const &)" (?setFont@Text@sf@@QEAAXAEBVFont@2@@Z) referenced in function "public: __cdecl Menu::Menu(float,float)" (??0Menu@@QEAA@MM@Z)
+     1>Menu.obj : error LNK2019: unresolved external symbol "public: void __cdecl sf::Text::setFillColor(class sf::Color const &)" (?setFillColor@Text@sf@@QEAAXAEBVColor@2@@Z) referenced in function "public: __cdecl Menu::Menu(float,float)" (??0Menu@@QEAA@MM@Z)
+     1>Menu.obj : error LNK2001: unresolved external symbol "public: static class sf::RenderStates const sf::RenderStates::Default" (?Default@RenderStates@sf@@2V12@B)
+     1>Menu.obj : error LNK2001: unresolved external symbol "public: static class sf::Color const sf::Color::White" (?White@Color@sf@@2V12@B)
+     1>E:\.com.NSH\FinalProjectCS\x64\Debug\FinalProjectCS.exe : fatal error LNK1120: 43 unresolved externals
+     1>Done Building Project "E:\.com.NSH\FinalProjectCS\FinalProjectCS\FinalProjectCS.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.03
